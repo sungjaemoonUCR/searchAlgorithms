@@ -15,13 +15,15 @@ Solucion * SolucionadorIDA::solucione( Problema * problema){
     Estado* estado = problema->getEstadoInicial();
     profundidad = problema->heuristica(estado);
     bool resuelto = false;
+    /*
+    
 
     Lista * pasos = new Lista();
     Solucion * solucion = new Solucion(pasos);
     
     while(!resuelto){
 
-    }
+    }*/
 }
 
 Solucion * SolucionadorIDA::solucioneRec(Problema * problema){
