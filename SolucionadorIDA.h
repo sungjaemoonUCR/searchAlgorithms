@@ -7,11 +7,18 @@
 
 using namespace std;
 
+class Nodo{
+    Nodo * padre;
+};
 class SolucionadorIDA : public Solucionador {
    private:
+    int profundidad;
 
    public:
       SolucionadorIDA();
+      Solucion * solucione(Problema *);
+      Solucion * solucioneRec(Problema *);
 };
+
 
 #endif

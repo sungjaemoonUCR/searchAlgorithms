@@ -8,32 +8,22 @@
 using namespace std;
 
 SolucionadorIDA::SolucionadorIDA(){
-
-}
-
-Lista * SolucionadorIDA::revertPasos(){
-
+    profundidad = 0;
 }
 
 Solucion * SolucionadorIDA::solucione( Problema * problema){
+    Estado* estado = problema->getEstadoInicial();
+    profundidad = problema->heuristica(estado);
+    bool resuelto = false;
 
+    Lista * pasos = new Lista();
+    Solucion * solucion = new Solucion(pasos);
+    
+    while(!resuelto){
 
-
+    }
 }
 
-Solucion * SolucionadorIDA::retornarSolucion(){
+Solucion * SolucionadorIDA::solucioneRec(Problema * problema){
 
 }
-
-void SolucionadorIDA::agregarAFrontera(Lista * siguientes){
-	
-}
-
-int SolucionadorIDA::comprobarSiSolucion(Problema* problema){
-
-}
-
-void SolucionadorIDA::expandir(Problema* problema){
-
-}
-

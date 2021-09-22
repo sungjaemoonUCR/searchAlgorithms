@@ -2,7 +2,7 @@
 #define SOLUCIONADOR_IDA_FACTORY
 
 #include "Fabrica.h"
-#include "SolcionadorIDA.h"
+#include "SolucionadorIDA.h"
 
 class SolucionadorIDAFactory : public Fabrica {
     public:
